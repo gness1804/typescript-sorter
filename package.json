@@ -1,0 +1,15 @@
+{
+  "name": "sort",
+  "version": "1.0.0",
+  "description": "Sorting algorithm",
+  "main": "index.js",
+  "author": "gness1804 <graham.nessler@gmail.com>",
+  "license": "MIT",
+  "scripts": {
+    "start": "yarn tsc -w",
+    "compile": "yarn tsc"
+  },
+  "dependencies": {
+    "typescript": "^3.9.5"
+  }
+}
