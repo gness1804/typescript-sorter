@@ -7,9 +7,9 @@ var Sorter = /** @class */ (function () {
         for (var i = 0; i < this.collection.length; i++) {
             for (var j = 0; j < this.collection.length; j++) {
                 if (this.collection[j] > this.collection[j + 1]) {
-                    var leftElem = this.collection[j];
+                    var origLeftElem = this.collection[j];
                     this.collection[j] = this.collection[j + 1];
-                    this.collection[j + 1] = leftElem;
+                    this.collection[j + 1] = origLeftElem;
                 }
             }
         }

@@ -4,9 +4,9 @@ class Sorter {
     for (let i = 0; i < this.collection.length; i++) {
       for (let j = 0; j < this.collection.length; j++) {
         if (this.collection[j] > this.collection[j + 1]) {
-          const leftElem = this.collection[j];
+          const origLeftElem = this.collection[j];
           this.collection[j] = this.collection[j + 1];
-          this.collection[j + 1] = leftElem;
+          this.collection[j + 1] = origLeftElem;
         }
       }
     }
