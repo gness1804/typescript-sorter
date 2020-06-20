@@ -1,5 +1,17 @@
 class Sorter {
   constructor(public collection: number[]) {}
+  sort(): void {
+    for (let i = 0; i < this.collection.length; i++) {
+      for (let j = 0; j < this.collection.length; j++) {
+        if (this.collection[j] > this.collection[j + 1]) {
+          const leftElem = this.collection[j];
+          this.collection[j] = this.collection[j + 1];
+          this.collection[j + 1] = leftElem;
+        }
+      }
+    }
+  }
 }
 
-const sorter = new Sorter([2]);
+const sorter = new Sorter([9, 23, 3, -56, 2]);
+sorter.sort();
