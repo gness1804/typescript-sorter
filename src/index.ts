@@ -1,11 +1,5 @@
-interface FooI {
-  bar: string;
+class Sorter {
+  constructor(public collection: number[]) {}
 }
 
-class Foo implements FooI {
-  bar: string;
-
-  constructor(bar: string) {
-    this.bar = bar;
-  }
-}
+const sorter = new Sorter([2]);

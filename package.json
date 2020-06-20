@@ -9,11 +9,15 @@
     "start:build": "yarn tsc -w",
     "start:run": "nodemon build/index.js",
     "start": "concurrently yarn:start:*",
-    "compile": "yarn tsc"
+    "compile": "yarn tsc",
+    "prettier:check": "prettier --check \"src/*.ts\""
   },
   "dependencies": {
     "concurrently": "^5.2.0",
     "nodemon": "^2.0.4",
     "typescript": "^3.9.5"
+  },
+  "devDependencies": {
+    "prettier": "2.0.5"
   }
 }

@@ -1,7 +1,8 @@
 "use strict";
-var Foo = /** @class */ (function () {
-    function Foo(bar) {
-        this.bar = bar;
+var Sorter = /** @class */ (function () {
+    function Sorter(collection) {
+        this.collection = collection;
     }
-    return Foo;
+    return Sorter;
 }());
+var sorter = new Sorter([2]);
