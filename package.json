@@ -6,10 +6,14 @@
   "author": "gness1804 <graham.nessler@gmail.com>",
   "license": "MIT",
   "scripts": {
-    "start": "yarn tsc -w",
+    "start:build": "yarn tsc -w",
+    "start:run": "nodemon build/index.js",
+    "start": "concurrently yarn:start:*",
     "compile": "yarn tsc"
   },
   "dependencies": {
+    "concurrently": "^5.2.0",
+    "nodemon": "^2.0.4",
     "typescript": "^3.9.5"
   }
 }
