@@ -1,4 +1,4 @@
-class Sorter {
+export class Sorter {
   constructor(public collection: number[]) {}
   sort(): void {
     for (let i = 0; i < this.collection.length; i++) {
