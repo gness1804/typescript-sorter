@@ -1,3 +1,4 @@
+import { CharactersCollection } from './../CharactersCollection';
 import { Sorter } from './../Sorter';
 import { NumbersCollection } from './../NumbersCollection';
 
@@ -7,6 +8,13 @@ describe('Sorter', () => {
     const sorter = new Sorter(collection);
     sorter.sort();
     expect(collection.data).toEqual([-56, 2, 3, 9, 23]);
+  });
+
+  it('should properly sort an array of strings', () => {
+    const collection = new CharactersCollection('eUaowwG');
+    const sorter = new Sorter(collection);
+    sorter.sort();
+    expect(collection.data).toEqual('aeGoUww');
   });
 });
 

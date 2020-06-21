@@ -11,6 +11,7 @@
     "start": "concurrently yarn:start:*",
     "compile": "yarn tsc",
     "prettier:check": "prettier --check \"src/*.ts\"",
+    "prettier:write": "prettier --write \"src/*.ts\"",
     "check:types": "tsc --noEmit",
     "test": "yarn jest"
   },
