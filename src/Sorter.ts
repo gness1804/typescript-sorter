@@ -1,7 +1,5 @@
-import { NumbersCollection } from './NumbersCollection';
-
 export class Sorter implements SorterI {
-  constructor(public collection: NumbersCollection) {}
+  constructor(public collection: CollectionI) {}
   sort(): void {
     for (let i = 0; i < this.collection.length; i++) {
       for (let j = 0; j < this.collection.length; j++) {

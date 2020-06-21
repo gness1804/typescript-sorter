@@ -1,4 +1,4 @@
 declare interface SorterI {
-  collection: import('../NumbersCollection');
+  collection: CollectionI;
   sort: () => void;
 }
