@@ -1,5 +1,7 @@
 export class Node {
-  next: Node | null = null;
+  next: Node | null;
 
-  constructor(public data: number) {}
+  constructor(public data: number) {
+    this.next = null;
+  }
 }
