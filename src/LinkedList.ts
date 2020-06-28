@@ -69,6 +69,14 @@ export class LinkedList implements LinkedListI {
   }
 
   print(): number[] {
-    return [2];
+    if (!this.head) throw new Error('Empty list!');
+
+    let node: Node | null = this.head;
+    const result = [];
+    while (node) {
+      result.push(node.data);
+      node = node.next;
+    }
+    return result;
   }
 }
