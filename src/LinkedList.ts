@@ -1,9 +1,11 @@
 import { Node } from './Node';
+import { Sorter } from './Sorter';
 
-export class LinkedList implements LinkedListI {
+export class LinkedList extends Sorter {
   head: Node | null;
 
   constructor() {
+    super();
     this.head = null;
   }
 
